@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="CodeZen"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/mainQuote"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="A quote in 20sp and #073b4c with 8dp padding.\n\n“Rest and be kind, you don’t have to prove anything.”\n – Jack Kerouac"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/banner"
+        app:layout_constraintStart_toStartOf="@+id/banner"
+        app:layout_constraintTop_toBottomOf="@+id/banner" />
+
+    <TextView
+        android:id="@+id/secondQuote"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="“There are only two ways to live your life. One is as if nothing is a miracle. The other is as if everything is a miracle.”\n – Albert Einstein"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/mainQuote"
+        app:layout_constraintStart_toStartOf="@+id/mainQuote"
+        app:layout_constraintTop_toBottomOf="@+id/mainQuote" />
+
+    <ImageView
+        android:id="@+id/banner"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/heading"
+        app:layout_constraintStart_toStartOf="@+id/heading"
+        app:layout_constraintTop_toBottomOf="@+id/heading"
+        app:srcCompat="@android:drawable/ic_menu_gallery" />
+</androidx.constraintlayout.widget.ConstraintLayout>
